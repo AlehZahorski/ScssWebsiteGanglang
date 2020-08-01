@@ -18,6 +18,19 @@ body{
     &__section{
         max-width: 1100px;
         margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        &__ico{
+            margin-top: 25px;
+            margin-left: auto;
+            margin-right: 0;
+            span{
+                margin-left: 10px;
+            }
+            &__telmail{
+                margin-right: 110px;
+            }
+        }
     }
 }
 .header{
@@ -27,11 +40,16 @@ body{
         display: flex;
         flex-direction: row;
         list-style-type: none;
+        margin-left: 0;
         li{
-            padding-right: 30px;
+            margin-left: 30px;
+        }
+        li:nth-child(1){
+            margin-left: -40px;
         }
         li:nth-child(7){
-            padding-left: 200px;
+            margin-left: auto;
+            margin-right: 0;
         }
     }
     &_screen{
@@ -50,11 +68,28 @@ body{
 
 
 
+
+
+
 .projects_color{
     background-color: $color-red;
 }
 .projects{
     max-width: 1100px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    &__side{
+        display: flex;
+        flex-direction: row;
+        &__left{
+            display: flex;
+            flex-direction: row;
+        }
+        &__right{
+            display: flex;
+            flex-direction: row;    
+        }
+    }
 }
 
