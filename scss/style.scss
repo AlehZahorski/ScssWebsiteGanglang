@@ -1,5 +1,6 @@
 $color-blue: rgba(43, 213, 255, 0.664);
 $color-red: #fd5c5c;
+$color-black: #323232;
 
 body{
     margin: 0px;
@@ -10,11 +11,9 @@ body{
 
 .header_color{
     background-color: $color-blue;
-    width: 100vw;
 }
 .header_color__logo{
     background-color: white;
-    width: 100vw;
     &__section{
         max-width: 1100px;
         margin: 0 auto;
@@ -60,8 +59,30 @@ body{
         &__form{
             display: flex;
             flex-direction: column;
-            max-width: 350px;
-            height: 500px;
+            width: 397px;
+            height: 470px;
+            background-color: #fff;
+            h2{
+                text-align: center;
+            }
+            input{
+                margin: 10px auto;
+                width: 300px;
+                font-size: 20px;
+                padding-top: 10px;
+            }
+            textarea{
+                margin: 10px auto;
+                width: 302px;
+                font-size: 20px;
+                padding-top: 10px;
+            }
+            button{
+                margin: 10px auto;
+                width: 308px;
+                font-size: 20px;
+                padding-top: 10px;
+            }
          }
     }
 }
@@ -76,20 +97,156 @@ body{
 }
 .projects{
     max-width: 1100px;
+    height: 470px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    h2{
+        font-size: 46px;
+        text-align: center;
+    }
     &__side{
         display: flex;
         flex-direction: row;
         &__left{
             display: flex;
             flex-direction: row;
-        }
-        &__right{
-            display: flex;
-            flex-direction: row;    
+            &__text{
+                display: flex;
+                flex-direction: column;
+                margin-left: 10px;
+                hr{
+                    width: 100px;
+                    margin-left: 0;
+                }
+                width: 210px;
+                button{
+                    width: 150px;
+                    margin: 0 auto;
+                }
+            }
         }
     }
 }
 
+
+
+
+
+.our{
+    max-width: 1100px;
+    height: 1785px;
+    margin: 0 auto;
+    &_services{
+        &__firstSection{
+            display: flex;
+            flex-direction: row;
+            margin-top: 70px;
+        }
+        &__secondSection{
+            display: flex;
+            flex-direction: row;
+            margin-top: 70px;
+            &__text{
+                width: 542px;
+                height: 247px;
+                margin-left: -210px;
+                margin-top: 90px;
+                background-color: #fff;
+                -webkit-box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.41);
+                -moz-box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.41);
+                box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.41);
+            }
+        }
+        &__thirdSection{
+            display: flex;
+            flex-direction: row;
+            margin-top: 70px;
+            &__building{
+                display: flex;
+                flex-direction: row;
+                &__text{
+                    width: 285px;
+                    height: 330px;
+                    background-color: #fff;
+                    margin-left: -150px;
+                    margin-top: 75px;
+                    -webkit-box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.41);
+                    -moz-box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.41);
+                    box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.41);
+                }
+            }
+            &__road{
+                    margin-left: 10px;
+                    display: flex;
+                    flex-direction: row;
+                &__text{
+                    width: 285px;
+                    height: 330px;
+                    background-color: #fff;
+                    margin-left: -150px;
+                    margin-top: 75px;
+                    -webkit-box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.41);
+                    -moz-box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.41);
+                    box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.41);
+                }
+            }
+        }
+    }
+    &_clients{
+        &__text{
+            h2{
+                text-align: center;
+                font-size: 46px;
+            }
+            p{
+                text-align: center;
+                font-size: 18px;
+                letter-spacing: 3px;
+            }
+        }   
+        &__ico{
+            img{
+                margin: 40px 40px 0 30px;
+            }
+        }
+    }
+}
+
+
+
+
+.contact{
+    background-color: $color-black;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding-top: 85px;
+    padding-bottom: 85px;
+    span{
+        color: white;
+    }
+    
+}
+
+
+
+
+.footer{
+    height: 345px;
+    background-color:$color-red;
+    text-align: center;
+    color: #fff;
+    ul{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0 auto;
+        width: 700px;
+        li{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            margin-left: 30px;
+        }
+    }
+}

@@ -3,12 +3,10 @@ body {
   padding: 0px; }
 
 .header_color {
-  background-color: rgba(43, 213, 255, 0.664);
-  width: 100vw; }
+  background-color: rgba(43, 213, 255, 0.664); }
 
 .header_color__logo {
-  background-color: white;
-  width: 100vw; }
+  background-color: white; }
   .header_color__logo__section {
     max-width: 1100px;
     margin: 0 auto;
@@ -44,23 +42,139 @@ body {
   .header_rightSide__form {
     display: flex;
     flex-direction: column;
-    max-width: 350px;
-    height: 500px; }
+    width: 397px;
+    height: 470px;
+    background-color: #fff; }
+    .header_rightSide__form h2 {
+      text-align: center; }
+    .header_rightSide__form input {
+      margin: 10px auto;
+      width: 300px;
+      font-size: 20px;
+      padding-top: 10px; }
+    .header_rightSide__form textarea {
+      margin: 10px auto;
+      width: 302px;
+      font-size: 20px;
+      padding-top: 10px; }
+    .header_rightSide__form button {
+      margin: 10px auto;
+      width: 308px;
+      font-size: 20px;
+      padding-top: 10px; }
 
 .projects_color {
   background-color: #fd5c5c; }
 
 .projects {
   max-width: 1100px;
+  height: 470px;
   margin: 0 auto;
   display: flex;
   flex-direction: column; }
+  .projects h2 {
+    font-size: 46px;
+    text-align: center; }
   .projects__side {
     display: flex;
     flex-direction: row; }
     .projects__side__left {
       display: flex;
       flex-direction: row; }
-    .projects__side__right {
+      .projects__side__left__text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        width: 210px; }
+        .projects__side__left__text hr {
+          width: 100px;
+          margin-left: 0; }
+        .projects__side__left__text button {
+          width: 150px;
+          margin: 0 auto; }
+
+.our {
+  max-width: 1100px;
+  height: 1785px;
+  margin: 0 auto; }
+  .our_services__firstSection {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px; }
+  .our_services__secondSection {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px; }
+    .our_services__secondSection__text {
+      width: 542px;
+      height: 247px;
+      margin-left: -210px;
+      margin-top: 90px;
+      background-color: #fff;
+      -webkit-box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.41);
+      -moz-box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.41);
+      box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.41); }
+  .our_services__thirdSection {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px; }
+    .our_services__thirdSection__building {
       display: flex;
       flex-direction: row; }
+      .our_services__thirdSection__building__text {
+        width: 285px;
+        height: 330px;
+        background-color: #fff;
+        margin-left: -150px;
+        margin-top: 75px;
+        -webkit-box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.41);
+        -moz-box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.41);
+        box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.41); }
+    .our_services__thirdSection__road {
+      margin-left: 10px;
+      display: flex;
+      flex-direction: row; }
+      .our_services__thirdSection__road__text {
+        width: 285px;
+        height: 330px;
+        background-color: #fff;
+        margin-left: -150px;
+        margin-top: 75px;
+        -webkit-box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.41);
+        -moz-box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.41);
+        box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.41); }
+  .our_clients__text h2 {
+    text-align: center;
+    font-size: 46px; }
+  .our_clients__text p {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 3px; }
+  .our_clients__ico img {
+    margin: 40px 40px 0 30px; }
+
+.contact {
+  background-color: #323232;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 2px;
+  padding-top: 85px;
+  padding-bottom: 85px; }
+  .contact span {
+    color: white; }
+
+.footer {
+  height: 345px;
+  background-color: #fd5c5c;
+  text-align: center;
+  color: #fff; }
+  .footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0 auto;
+    width: 700px; }
+    .footer ul li {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-left: 30px; }
