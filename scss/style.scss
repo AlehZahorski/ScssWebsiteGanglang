@@ -75,7 +75,7 @@ body{
         list-style-type: none;
         margin-left: 0;
         font-size: 22px;
-        font-weight: 500;
+        font-weight: 900;
         li{
             margin-left: 30px;
         }
@@ -100,9 +100,9 @@ body{
             height: 470px;
             background-color: #fff;
             border-radius: 5px;
-            -webkit-box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.41);
-            -moz-box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.41);
-            box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.41);
+            -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
             h2{
                 text-align: center;
                 color: $color-red;
@@ -153,6 +153,7 @@ body{
     h2{
         font-size: 46px;
         text-align: center;
+        color: #fff;
     }
     &__side{
         display: grid;
@@ -165,6 +166,15 @@ body{
                 display: flex;
                 flex-direction: column;
                 margin-left: 10px;
+                h3{
+                    margin-top: 0;
+                    font-size: 25px;
+                    color: #fff;
+                }
+                p{
+                    font-size: 18px;
+                    color: #fff;
+                }
                 hr{
                     width: 100px;
                     margin-left: 0;
@@ -172,7 +182,12 @@ body{
                 width: 210px;
                 button{
                     width: 150px;
-                    margin: 0 auto;
+                    border-radius: 30px;
+                    border: 0px;
+                    background-color: #fff;
+                    color: $color-red;
+                    font-size: 18px;
+                    padding: 5px;
                 }
             }
         }
@@ -191,6 +206,21 @@ body{
             display: flex;
             flex-direction: row;
             margin-top: 70px;
+            h3{
+                font-size: 46px;
+            }
+            hr {
+                border: none;
+                color: $color-red; 
+                background-color: $color-red;
+                height: 2px; 
+                width: 260px;
+                margin-left: 0;
+                margin-top: -30px;
+               }
+            p{
+                font-size: 18px;
+            }
         }
         &__secondSection{
             display: flex;
@@ -205,6 +235,37 @@ body{
                 -webkit-box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.41);
                 -moz-box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.41);
                 box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.41);
+                h3{
+                    color: $color-red;
+                    padding-left: 20px;
+                    font-size: 24px;
+                }
+                hr{
+                    border: none;
+                    color: $color-red; 
+                    background-color: $color-red;
+                    height: 1px; 
+                    width: 200px;
+                    margin-left: 20px;
+                    margin-top: -10px;
+                }
+                p{
+                    font-size: 18px;
+                    padding-left: 20px;
+                    letter-spacing: 1px;
+                    line-height: 1.5;
+                    padding-right: 50px;
+                }
+                button{
+                    margin-left: 20px;
+                    border: 1px solid $color-red;
+                    border-radius: 20px;
+                    padding: 5px;
+                    width: 200px;
+                    color: $color-red;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
             }
         }
         &__thirdSection{
@@ -223,6 +284,37 @@ body{
                     -webkit-box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.41);
                     -moz-box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.41);
                     box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.41);
+                    h3{
+                        font-size: 24px;
+                        padding-left: 20px;
+                        color: $color-red;
+                    }
+                    hr{
+                        border: none;
+                        color: $color-red; 
+                        background-color: $color-red;
+                        height: 1px; 
+                        width: 130px;
+                        margin-left: 20px;
+                        margin-top: -10px;
+                    }
+                    p{
+                        font-size: 18px;
+                        padding-left: 20px;
+                        letter-spacing: 1px;
+                        line-height: 1.5;
+                        padding-right: 20px;
+                    }
+                    button{
+                        margin-left: 20px;
+                        border: 1px solid $color-red;
+                        border-radius: 20px;
+                        padding: 5px;
+                        width: 200px;
+                        color: $color-red;
+                        font-weight: 500;
+                        font-size: 18px;
+                    }
                 }
             }
             &__road{
@@ -238,6 +330,37 @@ body{
                     -webkit-box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.41);
                     -moz-box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.41);
                     box-shadow: 3px 2px 4px 0px rgba(0,0,0,0.41);
+                    h3{
+                        font-size: 24px;
+                        padding-left: 20px;
+                        color: $color-red;
+                    }
+                    hr{
+                        border: none;
+                        color: $color-red; 
+                        background-color: $color-red;
+                        height: 1px; 
+                        width: 130px;
+                        margin-left: 20px;
+                        margin-top: -10px;
+                    }
+                    p{
+                        font-size: 18px;
+                        padding-left: 20px;
+                        letter-spacing: 1px;
+                        line-height: 1.5;
+                        padding-right: 20px;
+                    }
+                    button{
+                        margin-left: 20px;
+                        border: 1px solid $color-red;
+                        border-radius: 20px;
+                        padding: 5px;
+                        width: 200px;
+                        color: $color-red;
+                        font-weight: 500;
+                        font-size: 18px;
+                    }
                 }
             }
         }
@@ -276,6 +399,16 @@ body{
     span{
         color: white;
     }
+    button{
+        width: 240px;
+        font-size: 30px;
+        padding: 10px;
+        border: 1px solid $color-black;
+        border-radius: 30px;
+        letter-spacing: 2px;
+        font-weight: 500;
+        color: $color-black;
+    }
     
 }
 
@@ -292,11 +425,28 @@ body{
         flex-direction: row;
         list-style-type: none;
         margin: 0 auto;
-        width: 700px;
+        width: 800px;
         li{
             margin-top: 40px;
             margin-bottom: 40px;
             margin-left: 30px;
+            font-size: 22px;
         }
+    }
+    &__ico{
+        img{
+            padding: 20px;
+        }
+    }
+    p{
+        font-size: 20px;
+        letter-spacing: 1.3px;
+    }
+    hr{
+        border: none;
+        color: $color-red; 
+        background-color: #fff;
+        height: 1px; 
+        width: 800px;
     }
 }
