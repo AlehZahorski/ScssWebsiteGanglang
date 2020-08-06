@@ -2,6 +2,14 @@ $color-blue: #e8fdff;
 $color-red: #fd5c5c;
 $color-black: #323232;
 
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1100px;
+
+$screen-sm-max:767px;   
+$screen-md-max:991px;
+$screen-lg-max:1099px;
 
 
 
@@ -97,52 +105,52 @@ body{
         display: flex;
         flex-direction: row;
         margin-top: 100px;
-    }
-    &_rightSide{
-        &__form{
-            display: flex;
-            flex-direction: column;
-            width: 397px;
-            height: 470px;
-            background-color: #fff;
-            border-radius: 5px;
-            -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
-            -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
-            box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
-            h2{
-                text-align: center;
-                color: $color-red;
+        &_rightSide{
+            &__form{
+                display: flex;
+                flex-direction: column;
+                width: 397px;
+                height: 470px;
+                background-color: #fff;
+                border-radius: 5px;
+                -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
+                box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
+                h2{
+                    text-align: center;
+                    color: $color-red;
+                }
+                input{
+                    margin: 10px auto;
+                    width: 340px;
+                    height: 50px;
+                    font-size: 20px;
+                    padding-top: 10px;
+                    border: 1px solid $color-red;
+                    border-radius: 3px;
+                }
+                textarea{
+                    margin: 10px auto;
+                    width: 342px;
+                    height: 130px;
+                    font-size: 22px;
+                    padding-top: 10px;
+                    resize: none;
+                    border: 1px solid $color-red;
+                    border-radius: 3px;
+                }
+                button{
+                    color: #fff;
+                    margin: 10px auto;
+                    width: 200px;
+                    font-size: 20px;
+                    padding: 5px;
+                    background-color: $color-red;
+                    border-radius: 50px;
+                    border: 0px;
+                }
             }
-            input{
-                margin: 10px auto;
-                width: 340px;
-                height: 50px;
-                font-size: 20px;
-                padding-top: 10px;
-                border: 1px solid $color-red;
-                border-radius: 3px;
-            }
-            textarea{
-                margin: 10px auto;
-                width: 342px;
-                height: 130px;
-                font-size: 22px;
-                padding-top: 10px;
-                resize: none;
-                border: 1px solid $color-red;
-                border-radius: 3px;
-            }
-            button{
-                color: #fff;
-                margin: 10px auto;
-                width: 200px;
-                font-size: 20px;
-                padding: 5px;
-                background-color: $color-red;
-                border-radius: 50px;
-                border: 0px;
-            }
-         }
+        }
     }
 }
 
@@ -457,4 +465,66 @@ body{
         height: 1px; 
         width: 800px;
     }
+}
+
+
+/////////////////////////////////////
+/////////////// MEDIA ///////////////
+/////////////////////////////////////
+
+
+@media (max-width: $screen-sm-max){
+.header_color__logo{
+    &__section{
+        height: 100px;
+        &__logo{
+            margin-left: 10px;
+            img{
+                width: 120px;
+                height: 70px;
+            }
+        }
+        &__ico{
+            margin-top: 5px;
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            &__grid{
+                margin-top: 10px;
+                margin-right: -10px;
+            }
+            &__none{
+                display: none;
+            }
+        }
+    }
+}
+.header{
+    &_navbar{
+        display: none;
+    }
+    &_screen{
+        margin-top: 30px;
+        flex-direction: column;
+        &_leftSide{
+            text-align: center;
+            img{
+                width: 80%;
+            }
+        }
+        &_rightSide{
+            &__form{
+                h2{
+                    font-size: 19px;
+                }
+                width: 80%;
+                margin: 0 auto;
+                input{
+                    height: 15px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
 }
