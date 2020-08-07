@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GANGLAND</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <script src="main.js" defer></script>
+    <script type="text/javascript" src="./wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <meta name="description" content="We are building future.">
 </head>
 <body>
     <section class="header_color">
@@ -42,10 +48,10 @@
             </ul>
         </nav>
         <div class="header_screen">
-            <div class="header_screen_leftSide">
+            <div class="header_screen_leftSide animate__animated animate__slideInLeft">
                 <img src="./img/header_screen.png" alt="main screen image(building)">
             </div>
-            <div class="header_screen_rightSide">
+            <div class="header_screen_rightSide animate__animated animate__slideInRight">
                 <form action="" class="header_screen_rightSide__form">
                     <h2>GET A QUOTE</h2>
                     <input type="text" placeholder="NAME" required>
@@ -58,13 +64,14 @@
         </div>
         </div>
     </section>
+
    <section class="projects_color">
        <div class="projects">
             <div class="projects__h2">
-                <h2>ONGOING PROJECTS</h2>
+                <h2 class="animate__animated animate__backInDown">ONGOING PROJECTS</h2>
             </div>
             <div class="projects__side">
-                <div class="projects__side__left">
+                <div class="projects__side__left wow animate__animated animate__flipInY">
                         <img src="./img/projects_smart.png" alt="project's photo">
                         <div class="projects__side__left__text">
                             <h3>SMART HOMES</h3>
@@ -77,7 +84,7 @@
                         </div>
                         
                 </div>
-                <div class="projects__side__left">
+                <div class="projects__side__left wow animate__animated animate__flipInY">
                         <img src="./img/projects_smart.png" alt="project's photo">
                         <div class="projects__side__left__text">
                             <h3>SMART HOMES</h3>
@@ -93,10 +100,11 @@
             </div>
        </div>           
    </section>
+
    <section class="our">
        <div class="our_services">
            <div class="our_services__firstSection">
-               <div class="our_services__firstSection__text">
+               <div class="our_services__firstSection__text wow animate__animated animate__fadeInBottomLeft">
                    <h3>OUR SERVICES</h3>
                    <hr>
                    <p>We have an international experienced O&M division,
@@ -107,15 +115,15 @@
                     provides project commissioning expertise along with
                     developing mechanism to retrieve and manage</p>
                </div>
-               <div class="our_services__firstSection__photo">
+               <div class="our_services__firstSection__photo wow animate__animated animate__fadeInTopRight">
                    <img src="./img/our_first.png" alt="photo with our work">
                </div>
            </div>
            <div class="our_services__secondSection">
-               <div class="our_services__secondSection__photo">
+               <div class="our_services__secondSection__photo wow animate__animated animate__fadeInTopLeft">
                    <img src="./img/our_second.png" alt="photo with our salar power project">
                </div>
-               <div class="our_services__secondSection__text">
+               <div class="our_services__secondSection__text wow animate__animated animate__fadeInBottomRight">
                     <h3>SALAR POWER PROJECT</h3>
                     <hr>
                     <p>Conventional energy is finite. To light up tomorrow’s
@@ -124,7 +132,7 @@
                </div>
            </div>
            <div class="our_services__thirdSection">
-               <div class="our_services__thirdSection__building">
+               <div class="our_services__thirdSection__building wow animate__animated animate__fadeIn">
                     <div class="our_services__thirdSection__building__image">
                         <img src="./img/our_third_building.png" alt="photo with building">
                     </div>
@@ -138,7 +146,7 @@
                             <button>KNOW MORE</button>
                     </div>
                </div>
-               <div class="our_services__thirdSection__road">
+               <div class="our_services__thirdSection__road wow animate__animated animate__fadeIn">
                     <div class="our_services__thirdSection__road__photo">
                         <img src="./img/our_third_road.png" alt="photo with road">
                     </div>
@@ -169,10 +177,12 @@
            </div>
        </div>
    </section>
+
    <section class="contact">
        <span>Have any questions about our work?</span>
-       <button>CONTACT</button>
+       <button class="wow animate__animated animate__fadeIn">CONTACT</button>
    </section>
+
    <footer class="footer">
        <div class="footer_menu">
             <ul>
@@ -184,7 +194,7 @@
                 <li>CONTACT</li>
             </ul>
        </div>
-       <div class="footer__ico">
+       <div class="footer__ico wow animate__animated animate__fadeIn">
            <img src="./img/footer_facebook.png" alt="ico facebook">
            <img src="./img/footer_instagram.png" alt="ico instagram">
            <img src="./img/footer_twitter.png" alt="ico twitter">

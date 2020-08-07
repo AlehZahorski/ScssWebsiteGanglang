@@ -12,5 +12,9 @@
     "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.0",
+    "wowjs": "^1.1.3"
   }
 }

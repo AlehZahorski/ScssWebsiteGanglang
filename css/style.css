@@ -369,15 +369,16 @@ body {
     .header_color__logo__section__ico {
       margin-top: 5px;
       margin-right: 20px;
-      display: flex;
       flex-direction: column; }
       .header_color__logo__section__ico__grid {
         margin-top: 10px;
         margin-right: -10px; }
+        .header_color__logo__section__ico__grid img {
+          width: 0%; }
       .header_color__logo__section__ico__none {
         display: none; }
   .header {
-    height: 90vh; }
+    height: 100%; }
     .header_navbar {
       display: none; }
     .header_screen {
@@ -387,173 +388,174 @@ body {
         text-align: center; }
         .header_screen_leftSide img {
           width: 70%; }
-      .header_screen_rightSide__form {
-        height: 90%;
-        width: 80%;
-        margin: 0 auto; }
-        .header_screen_rightSide__form h2 {
-          font-size: 19px; }
-        .header_screen_rightSide__form input {
-          height: 12px;
-          font-size: 15px;
+      .header_screen_rightSide {
+        margin-bottom: 10px; }
+        .header_screen_rightSide__form {
+          height: 90%;
           width: 80%;
-          margin-top: 0; }
-        .header_screen_rightSide__form textarea {
-          width: 80%;
-          height: 100px; }
-        .header_screen_rightSide__form button {
-          margin-top: 0; } }
-
-.projects {
-  height: 100%; }
-  .projects h2 {
-    font-size: 26px; }
-  .projects__side {
-    display: grid;
-    grid-template-columns: 1fr; }
-    .projects__side__left {
-      display: flex;
-      flex-direction: column; }
-      .projects__side__left__text {
-        display: flex;
-        flex-direction: column;
-        margin-left: 10px;
-        text-align: center;
-        width: 210px; }
-        .projects__side__left__text h3 {
-          margin: 10px auto;
-          font-size: 25px; }
-        .projects__side__left__text hr {
-          width: 150px;
           margin: 0 auto; }
-        .projects__side__left__text button {
-          margin: 0 auto 10px auto; }
-
-.our {
-  height: 100%;
-  margin: 0 auto;
-  text-align: center; }
-  .our_services__firstSection {
-    flex-direction: column;
-    margin-top: 0; }
-    .our_services__firstSection h3 {
-      font-size: 30px; }
-    .our_services__firstSection hr {
-      display: none; }
-    .our_services__firstSection p {
-      width: 90%;
-      margin: 0 auto; }
-    .our_services__firstSection img {
-      width: 90%;
-      margin: 0 auto; }
-  .our_services__secondSection {
-    display: grid;
-    grid-template-areas: 'text' 'photo';
-    margin-top: 70px; }
-    .our_services__secondSection__photo {
-      grid-area: photo;
-      margin-top: -50px; }
-      .our_services__secondSection__photo img {
-        width: 90%; }
-    .our_services__secondSection__text {
-      grid-area: text;
-      width: 85%;
-      margin: 0 auto;
-      height: 100%; }
-      .our_services__secondSection__text h3 {
-        padding: 0;
-        font-size: 18px; }
-      .our_services__secondSection__text hr {
-        display: none; }
-      .our_services__secondSection__text p {
-        font-size: 14px; }
-      .our_services__secondSection__text button {
-        width: 50%;
-        font-size: 15px;
-        margin-bottom: 15px; }
-  .our_services__thirdSection {
-    flex-direction: column;
-    margin-top: 70px; }
-    .our_services__thirdSection__building {
-      display: flex;
-      flex-direction: column; }
-      .our_services__thirdSection__building img {
-        width: 90%; }
-      .our_services__thirdSection__building__text {
-        width: 285px;
-        height: 270px;
-        background-color: #fff;
-        margin: -220px auto 0 auto; }
-        .our_services__thirdSection__building__text h3 {
-          font-size: 22px;
-          padding: 0; }
-        .our_services__thirdSection__building__text hr {
-          display: none; }
-        .our_services__thirdSection__building__text button {
-          margin: 0 auto;
-          font-size: 16px; }
-    .our_services__thirdSection__road {
-      margin-top: 50px;
+          .header_screen_rightSide__form h2 {
+            font-size: 19px; }
+          .header_screen_rightSide__form input {
+            height: 12px;
+            font-size: 15px;
+            width: 80%;
+            margin-top: 0; }
+          .header_screen_rightSide__form textarea {
+            width: 80%;
+            height: 100px; }
+          .header_screen_rightSide__form button {
+            margin-top: 0; }
+  .projects {
+    height: 100%; }
+    .projects h2 {
+      font-size: 26px; }
+    .projects__side {
       display: grid;
-      grid-template-areas: "text" "photo"; }
-      .our_services__thirdSection__road__photo {
-        grid-area: photo;
-        margin: -100px auto 0 auto; }
-        .our_services__thirdSection__road__photo img {
-          width: 90%; }
-      .our_services__thirdSection__road__text {
-        grid-area: text;
-        width: 80%;
-        height: 100%;
-        background-color: #fff;
+      grid-template-columns: 1fr; }
+      .projects__side__left {
+        display: flex;
+        flex-direction: column; }
+        .projects__side__left__text {
+          display: flex;
+          flex-direction: column;
+          margin-left: 10px;
+          text-align: center;
+          width: 210px; }
+          .projects__side__left__text h3 {
+            margin: 10px auto;
+            font-size: 25px; }
+          .projects__side__left__text hr {
+            width: 150px;
+            margin: 0 auto; }
+          .projects__side__left__text button {
+            margin: 0 auto 10px auto; }
+  .our {
+    height: 100%;
+    margin: 0 auto;
+    text-align: center; }
+    .our_services__firstSection {
+      flex-direction: column;
+      margin-top: 0; }
+      .our_services__firstSection h3 {
+        font-size: 30px; }
+      .our_services__firstSection hr {
+        display: none; }
+      .our_services__firstSection p {
+        width: 90%;
         margin: 0 auto; }
-        .our_services__thirdSection__road__text h3 {
-          font-size: 22px;
-          padding: 0; }
-        .our_services__thirdSection__road__text hr {
+      .our_services__firstSection img {
+        width: 90%;
+        margin: 0 auto; }
+    .our_services__secondSection {
+      display: grid;
+      grid-template-areas: 'text' 'photo';
+      margin-top: 70px; }
+      .our_services__secondSection__photo {
+        grid-area: photo;
+        margin-top: -50px; }
+        .our_services__secondSection__photo img {
+          width: 90%; }
+      .our_services__secondSection__text {
+        grid-area: text;
+        width: 85%;
+        margin: 0 auto;
+        height: 100%; }
+        .our_services__secondSection__text h3 {
+          padding: 0;
+          font-size: 18px; }
+        .our_services__secondSection__text hr {
           display: none; }
-        .our_services__thirdSection__road__text p {
-          font-size: 16px; }
-        .our_services__thirdSection__road__text button {
-          font-size: 16px;
-          margin: 0 auto 10px auto; }
-  .our_clients__text h2 {
-    text-align: center;
-    font-size: 32px; }
-  .our_clients__text p {
-    text-align: center;
-    font-size: 18px;
-    letter-spacing: 2px;
-    width: 80%;
-    margin: 0 auto; }
-  .our_clients__ico {
-    margin: 20px auto 0 auto;
-    width: 90%;
-    display: grid;
-    grid-template-columns: 1fr 1fr; }
-    .our_clients__ico img {
+        .our_services__secondSection__text p {
+          padding: 10px;
+          font-size: 15px; }
+        .our_services__secondSection__text button {
+          width: 50%;
+          font-size: 15px;
+          margin-bottom: 15px; }
+    .our_services__thirdSection {
+      flex-direction: column;
+      margin-top: 70px; }
+      .our_services__thirdSection__building {
+        display: flex;
+        flex-direction: column; }
+        .our_services__thirdSection__building img {
+          width: 90%; }
+        .our_services__thirdSection__building__text {
+          width: 80%;
+          height: 270px;
+          background-color: #fff;
+          margin: -220px auto 0 auto; }
+          .our_services__thirdSection__building__text p {
+            font-size: 16px; }
+          .our_services__thirdSection__building__text h3 {
+            font-size: 22px;
+            padding: 0; }
+          .our_services__thirdSection__building__text hr {
+            display: none; }
+          .our_services__thirdSection__building__text button {
+            margin: 0 auto;
+            font-size: 16px; }
+      .our_services__thirdSection__road {
+        margin-top: 50px;
+        display: grid;
+        grid-template-areas: "text" "photo"; }
+        .our_services__thirdSection__road__photo {
+          grid-area: photo;
+          margin: -100px auto 0 auto; }
+          .our_services__thirdSection__road__photo img {
+            width: 90%; }
+        .our_services__thirdSection__road__text {
+          grid-area: text;
+          width: 80%;
+          height: 100%;
+          background-color: #fff;
+          margin: 0 auto; }
+          .our_services__thirdSection__road__text h3 {
+            font-size: 22px;
+            padding: 0; }
+          .our_services__thirdSection__road__text hr {
+            display: none; }
+          .our_services__thirdSection__road__text p {
+            font-size: 16px; }
+          .our_services__thirdSection__road__text button {
+            font-size: 16px;
+            margin: 0 auto 10px auto; }
+    .our_clients__text h2 {
+      text-align: center;
+      font-size: 32px; }
+    .our_clients__text p {
+      text-align: center;
+      font-size: 18px;
+      letter-spacing: 2px;
+      width: 80%;
+      margin: 0 auto; }
+    .our_clients__ico {
+      margin: 20px auto 0 auto;
       width: 90%;
-      margin: 10px auto 10px auto; }
-
-.contact button {
-  font-size: 25px;
-  width: 50%;
-  margin: 10px auto 0 auto; }
-
-.footer {
-  height: 100%;
-  text-align: center; }
-  .footer ul {
-    display: none; }
-  .footer__ico img {
-    padding: 15px; }
-  .footer p {
-    font-size: 16px;
-    letter-spacing: 1.3px;
-    margin-bottom: 10px; }
-  .footer hr {
-    border: none;
-    color: #fd5c5c;
-    background-color: #fff;
-    height: 1px;
-    width: 90%; }
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+      .our_clients__ico img {
+        width: 90%;
+        margin: 10px auto 10px auto; }
+  .contact button {
+    font-size: 25px;
+    width: 50%;
+    margin: 10px auto 0 auto; }
+  .footer {
+    height: 100%;
+    text-align: center; }
+    .footer ul {
+      display: none; }
+    .footer__ico img {
+      padding: 15px; }
+    .footer p {
+      font-size: 16px;
+      letter-spacing: 1.3px;
+      margin-bottom: 10px; }
+    .footer hr {
+      border: none;
+      color: #fd5c5c;
+      background-color: #fff;
+      height: 1px;
+      width: 90%; } }
